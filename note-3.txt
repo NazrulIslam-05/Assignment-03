@@ -1,0 +1,12 @@
+main part:
+1.nav bar
+2.banner section without below photo 
+3deal of the day
+4. team member
+5.footer
+
+bonus:
+1.banner below section
+2.day of the day- (details) other image show
+3.why choose us
+extra:
