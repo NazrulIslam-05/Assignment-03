@@ -10,6 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome style -->
     <script src="https://kit.fontawesome.com/dec71dcf24.js" crossorigin="anonymous"></script>
+
     <title>Fruits Burst</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
@@ -18,15 +19,15 @@
     </style>
 </head>
 
-<body >
+<body>
 
     <header class=" m-20">
 
-        <div class="navbar bg-[#F85559] rounded-lg  ">
-            <div class="navbar-start">
-                <div class="dropdown">
+        <div class="navbar ml-0  pl-0 bg-[#F85559] rounded-3xl  ">
+            <div class="navbar-start lg:flex-1">
 
-                    <ul class=" flex flex-col lg:flex-row mt-3  gap-10 pr-5   text-white">
+                <div class="dropdown  ">
+                    <ul class="hidden lg:flex  mt-3  gap-10 pr-5   text-white">
                         <li><a>Home</a></li>
                         <li><a>About us</a></li>
                         <li><a>shop</a></li>
@@ -35,21 +36,19 @@
                 </div>
             </div>
 
-            <div class="navbar-center">
-                <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+            <div class=" ml-0 pl-0 lg:flex-1">
+                <img class=" pl-0 ml-0" src="img/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-3xl font-bold text-white">Fruit Burst</a>
             </div>
 
 
-            <div class="navbar-end rounded-lg bg-white w-60 flex ">
-                <div>
-                    <h2>Search here</h2>
-                </div>
-                <div>
-                    <i class="fa-duotone fa-magnifying-glass"></i>
-                </div>
 
-
+            <div class=" hidden lg:flex justify-between  bg-white w-44 rounded-lg mr-16">
+                <p class=" opacity-40 flex-1 text-left">Search here</p>
+                <i class="fa-brands fa-searchengin"></i>
             </div>
+
+
         </div>
 
         <!-- banner -->
@@ -197,24 +196,49 @@
 
                     </div>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <form method="dialog" class="modal-box">
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
-                            <div class="modal-action">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn">Close</button>
+
+                    <!-- The button to open modal -->
+                    <label for="my_modal_6" class="btn"> Details </label>
+                    
+
+                    
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box">
+                            <figure class="px-10 pt-10">
+                                <img src="/img/fruit6.png" alt="Apple" class="rounded-xl" />
+                            </figure>
+                            <h3 class="font-bold text-lg text-center mx-52">Apple</h3>
+                            <p class="py-4 text-center">This modal works with a hidden checkbox!</p>
+                                     <!-- rating -->
+                                     <div class="rating rating-lg rating-half mx-36">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1"
+                                            checked />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    </div>
+
+                            <div class="modal-action mx-36">
+                                <label for="my_modal_6" class="btn">Close!</label>
+                                <label for="my_modal_6" class="btn">Buy Now</label>
                             </div>
-                        </form>
-                    </dialog>
+                        </div>
+                    </div>
                 </div>
 
 
-                <!-- deal card 2 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                 <!-- deal card 2 -->
+                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="/img/fruit7.png" alt="Shoes" class="rounded-xl" />
+                        <img src="/img/fruit7.png" alt="orange" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -237,24 +261,48 @@
 
                     </div>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <form method="dialog" class="modal-box">
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
-                            <div class="modal-action">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn">Close</button>
+
+                    <!-- The button to open modal -->
+                    <label for="my_modal_6" class="btn"> Details </label>
+                    
+
+                    
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box">
+                            <figure class="px-10 pt-10">
+                                <img src="/img/fruit7.png" alt="orange" class="rounded-xl" />
+                            </figure>
+                            <h3 class="font-bold text-lg text-center mx-52">orange</h3>
+                            <p class="py-4 text-center">This modal works with a hidden checkbox!</p>
+                                     <!-- rating -->
+                                     <div class="rating rating-lg rating-half mx-36">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1"
+                                            checked />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    </div>
+
+                            <div class="modal-action mx-36">
+                                <label for="my_modal_6" class="btn">Close!</label>
+                                <label for="my_modal_6" class="btn">Buy Now</label>
                             </div>
-                        </form>
-                    </dialog>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- deal card 3 -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                 <!-- deal card 3 -->
+                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="/img/fruit8.png" alt="Shoes" class="rounded-xl" />
+                        <img src="/img/fruit8.png" alt="dragon" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -277,24 +325,49 @@
 
                     </div>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <form method="dialog" class="modal-box">
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
-                            <div class="modal-action">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn">Close</button>
+
+                    <!-- The button to open modal -->
+                    <label for="my_modal_6" class="btn"> Details </label>
+                    
+
+                    
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box">
+                            <figure class="px-10 pt-10">
+                                <img src="/img/fruit8.png" alt="dragon" class="rounded-xl" />
+                            </figure>
+                            <h3 class="font-bold text-lg text-center mx-52">dragon</h3>
+                            <p class="py-4 text-center">This modal works with a hidden checkbox!</p>
+                                     <!-- rating -->
+                                     <div class="rating rating-lg rating-half mx-36">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1"
+                                            checked />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    </div>
+
+                            <div class="modal-action mx-36">
+                                <label for="my_modal_6" class="btn">Close!</label>
+                                <label for="my_modal_6" class="btn">Buy Now</label>
                             </div>
-                        </form>
-                    </dialog>
+                        </div>
+                    </div>
                 </div>
 
 
                 <!-- deal card 4 -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="/img/fruit9.png" alt="Shoes" class="rounded-xl" />
+                        <img src="/img/fruit9.png" alt="banana" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -317,17 +390,42 @@
 
                     </div>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="btn bg-base-100  text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <form method="dialog" class="modal-box">
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
-                            <div class="modal-action">
-                                <!-- if there is a button in form, it will close the modal -->
-                                <button class="btn">Close</button>
+
+                    <!-- The button to open modal -->
+                    <label for="my_modal_6" class="btn"> Details </label>
+                    
+
+                    
+                    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box">
+                            <figure class="px-10 pt-10">
+                                <img src="/img/fruit9.png" alt="banana" class="rounded-xl" />
+                            </figure>
+                            <h3 class="font-bold text-lg text-center mx-52">banana</h3>
+                            <p class="py-4 text-center">This modal works with a hidden checkbox!</p>
+                                     <!-- rating -->
+                                     <div class="rating rating-lg rating-half mx-36">
+                                        <input type="radio" name="rating-10" class="rating-hidden" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1"
+                                            checked />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                                    </div>
+
+                            <div class="modal-action mx-36">
+                                <label for="my_modal_6" class="btn">Close!</label>
+                                <label for="my_modal_6" class="btn">Buy Now</label>
                             </div>
-                        </form>
-                    </dialog>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -425,7 +523,8 @@
                     </div>
 
                     <div class="flex flex-col md:flex-col lg:flex-row items-center my-5">
-                        <div><button class="btn btn-gosht rounded-full"><i class="fa-solid fa-heart-circle-plus"></i></button></div>
+                        <div><button class="btn btn-gosht rounded-full"><i
+                                    class="fa-solid fa-heart-circle-plus"></i></button></div>
                         <div class=" ">
                             <h2 class=" text-2xl font-bold"> Dedicated Team </h2>
                             <div class=" w-24 h-[1px] bg-black mx-auto lg:mx-0"></div>
@@ -453,7 +552,7 @@
                 <div class=" flex-1 text-center lg:text-right ">
                     <div class="flex flex-col md:flex-col lg:flex-row-reverse items-center my-5">
                         <div class="flex flex-row-reverse"><button class="btn btn-gosht rounded-full">
-                            <i class="fa-solid fa-pepper-hot"></i></button></div>
+                                <i class="fa-solid fa-pepper-hot"></i></button></div>
                         <div class=" ">
                             <h2 class=" text-2xl font-bold"> Dedicated Team </h2>
                             <div class=" w-24 h-[1px] bg-black mx-auto lg:mr-0"></div>
@@ -462,7 +561,8 @@
                     </div>
 
                     <div class="flex flex-col md:flex-col lg:flex-row-reverse items-center lg:my-5">
-                        <div><button class="btn btn-gosht rounded-full"><i class="fa-solid fa-ice-cream"></i></button></div>
+                        <div><button class="btn btn-gosht rounded-full"><i class="fa-solid fa-ice-cream"></i></button>
+                        </div>
                         <div class=" ">
                             <h2 class=" text-2xl font-bold"> Dedicated Team </h2>
                             <div class=" w-24 h-[1px] bg-black mx-auto lg:mr-0"></div>
@@ -471,7 +571,8 @@
                     </div>
 
                     <div class="flex flex-col md:flex-col lg:flex-row-reverse items-center my-5">
-                        <div><button class="btn btn-gosht rounded-full"><i class="fa-regular fa-thumbs-up"></i></button></div>
+                        <div><button class="btn btn-gosht rounded-full"><i class="fa-regular fa-thumbs-up"></i></button>
+                        </div>
                         <div class="  ">
                             <h2 class=" text-2xl font-bold"> Dedicated Team </h2>
                             <div class=" w-24 h-[1px] bg-black mx-auto lg:mr-0 "></div>
